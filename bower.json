@@ -1,0 +1,34 @@
+{
+  "name": "responsivify",
+  "version": "0.0.0",
+  "authors": [
+    "Danny Banks <danny@dbanksdesign.com>"
+  ],
+  "description": "Responsive JS framework to build JS tools using breakpoints to keep your CSS and JS in sync.",
+  "main": "dist/responsivify.js",
+  "keywords": [
+    "responsive",
+    "javascript",
+    "breakpoints",
+    "CSS",
+    "framework",
+    "events"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0",
+    "underscore": ">= 1.5.0"
+  },
+  "devDependencies": {
+    "jquery": ">= 1.9.0",
+    "underscore": ">= 1.5.0"
+  }
+}

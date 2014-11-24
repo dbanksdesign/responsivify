@@ -1,0 +1,42 @@
+{
+  "name": "Responsivify",
+  "description": "Responsive hooks for your JS applications",
+  "url": "",
+  "keywords": [
+    "responsive",
+    "breakpoints",
+    "javascript",
+    "css"
+  ],
+  "author": "Danny Banks <danny@dbanksdesign.com>",
+  "dependencies": {
+    "underscore": ">=1.5.0"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.1",
+    "docco": "0.6.1",
+    "grunt": "~0.4.2",
+    "grunt-bowercopy": "^1.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "phantomjs": "1.9.0-1",
+    "time-grunt": "^1.0.0"
+  },
+  "scripts": {
+    "test": "phantomjs test/vendor/runner.js test/index.html?noglobals=true && coffee test/model.coffee",
+    "build": "uglifyjs backbone.js --mangle --source-map backbone-min.map -o backbone-min.js",
+    "doc": "docco backbone.js && docco examples/todos/todos.js examples/backbone.localstorage.js",
+    "lint": "jsl -nofilelisting -nologo -conf docs/jsl.conf -process backbone.js"
+  },
+  "main": "dist/responsivify.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbanksdesign/responsivify.git"
+  }
+}
