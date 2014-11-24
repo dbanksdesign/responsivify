@@ -26,12 +26,6 @@
     "phantomjs": "1.9.0-1",
     "time-grunt": "^1.0.0"
   },
-  "scripts": {
-    "test": "phantomjs test/vendor/runner.js test/index.html?noglobals=true && coffee test/model.coffee",
-    "build": "uglifyjs backbone.js --mangle --source-map backbone-min.map -o backbone-min.js",
-    "doc": "docco backbone.js && docco examples/todos/todos.js examples/backbone.localstorage.js",
-    "lint": "jsl -nofilelisting -nologo -conf docs/jsl.conf -process backbone.js"
-  },
   "main": "dist/responsivify.js",
   "version": "0.1.0",
   "license": "MIT",

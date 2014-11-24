@@ -1,6 +1,6 @@
 {
   "name": "responsivify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "Danny Banks <danny@dbanksdesign.com>"
   ],
@@ -21,14 +21,16 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "docs",
+    "src"
   ],
   "dependencies": {
-    "jquery": ">= 1.9.0",
-    "underscore": ">= 1.5.0"
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0"
   },
   "devDependencies": {
-    "jquery": ">= 1.9.0",
-    "underscore": ">= 1.5.0"
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0"
   }
 }
